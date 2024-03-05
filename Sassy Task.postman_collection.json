@@ -4,7 +4,7 @@
 		"name": "Sassy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "13401788",
-		"_collection_link": "https://lunar-crater-969259.postman.co/workspace/My-Workspace~5d77a075-f608-49d9-88e2-9f4b970d5b93/collection/13401788-87a865a2-e8ca-43bf-b890-9f998e430d23?action=share&source=collection_link&creator=13401788"
+		"_collection_link": "https://lunar-crater-969259.postman.co/workspace/5d77a075-f608-49d9-88e2-9f4b970d5b93/collection/13401788-87a865a2-e8ca-43bf-b890-9f998e430d23?action=share&source=collection_link&creator=13401788"
 	},
 	"item": [
 		{
@@ -17,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Deepak\",\n    \"email\":\"gdeepak@gmail.com\",\n    \"password\": \"test@123\"\n}",
+							"raw": "{\n    \"name\": \"Deepak Gupta\",\n    \"email\":\"gdeepak884@gmail.com\",\n    \"password\": \"test@123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -35,7 +35,69 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Deepak Gupta\",\n    \"email\":\"gdeepak884@gmail.com\",\n    \"password\": \"test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/auth/signup",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-YFnB1eJaxUebMxQh/vDiu0rKBgw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:26:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User created successfully\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Logout",
@@ -73,7 +135,69 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/auth/logout",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-dOpBAULxHtr7+aIW1TeWWSR6pVo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:27:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User logged out successfully\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Login",
@@ -96,7 +220,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\":\"gdeepak@gmail.com\",\n    \"password\": \"test@123\"\n}",
+							"raw": "{\n    \"email\":\"gdeepak884@gmail.com\",\n    \"password\": \"test@123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -114,7 +238,69 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"gdeepak884@gmail.com\",\n    \"password\": \"test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/auth/login",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "240"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f0-8KP1L3Yx0gkhAdUJTuHkI5g3I3I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:27:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User logged in successfully\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdkZWVwYWs4ODRAZ21haWwuY29tIiwiaWF0IjoxNzA5NjQ4ODQwLCJleHAiOjE3MDk3MzUyNDB9.B1wcOR_8dxY8yMs-udiczjAoEISqLOWf4ea6nFzKbRQ\"\n}"
+						}
+					]
 				}
 			],
 			"auth": {
@@ -176,7 +362,69 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\":\"Testing1\",\n    \"description\":\"testing\",\n    \"dueDate\":\"2024-05-04\",\n    \"status\":\"Pending\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/task/add",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"task",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "297"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"129-LBwLAJY2X0+PTI+zafgDbie8hWY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:27:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Task added successfully\",\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"Testing1\",\n        \"description\": \"testing\",\n        \"dueDate\": \"2024-05-04T00:00:00.000Z\",\n        \"status\": \"Pending\",\n        \"createdAt\": \"2024-03-05T14:27:31.041Z\",\n        \"updatedAt\": \"2024-03-05T14:27:31.041Z\",\n        \"userId\": \"16dc7477-f193-4fad-b8b7-9f45ebdcdae9\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Update",
@@ -210,7 +458,76 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\":\"Testing\",\n    \"description\":\"testing gig\",\n    \"dueDate\":\"2024-05-03\",\n    \"status\":\"Completed\"   //Pending //Completed // In_Progress //Not_Completed\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/task/update/:id",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"task",
+										"update",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "304"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"130-26fqfR/NyZK/pCfOpLZP/sVVcnk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:27:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Task updated successfully\",\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"Testing\",\n        \"description\": \"testing gig\",\n        \"dueDate\": \"2024-05-03T00:00:00.000Z\",\n        \"status\": \"Completed\",\n        \"createdAt\": \"2024-03-05T14:27:31.041Z\",\n        \"updatedAt\": \"2024-03-05T14:27:48.834Z\",\n        \"userId\": \"16dc7477-f193-4fad-b8b7-9f45ebdcdae9\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "All",
@@ -240,7 +557,69 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/task/all",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"task",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "268"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10c-PEuBnL0DPZQzO5YJiD0s33lcFFY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:27:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"Testing\",\n            \"description\": \"testing gig\",\n            \"dueDate\": \"2024-05-03T00:00:00.000Z\",\n            \"status\": \"Completed\",\n            \"createdAt\": \"2024-03-05T14:27:31.041Z\",\n            \"updatedAt\": \"2024-03-05T14:27:48.834Z\",\n            \"userId\": \"16dc7477-f193-4fad-b8b7-9f45ebdcdae9\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Task By ID",
@@ -271,12 +650,80 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "2"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Task By ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\":\"Testing\",\n    \"description\":\"testing\",\n    \"dueDate\":\"05-03-2024\",\n    \"status\":\"Pending\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/task/:id",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"task",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "266"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10a-1CGuUcKggh76mAj4/ZGEpUmL6R4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:28:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"Testing\",\n        \"description\": \"testing gig\",\n        \"dueDate\": \"2024-05-03T00:00:00.000Z\",\n        \"status\": \"Completed\",\n        \"createdAt\": \"2024-03-05T14:27:31.041Z\",\n        \"updatedAt\": \"2024-03-05T14:27:48.834Z\",\n        \"userId\": \"16dc7477-f193-4fad-b8b7-9f45ebdcdae9\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete",
@@ -305,12 +752,81 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "2"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\":\"Testing\",\n    \"description\":\"testing\",\n    \"dueDate\":\"05-03-2024\",\n    \"status\":\"Pending\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{task}}/task/delete/:id",
+									"host": [
+										"{{task}}"
+									],
+									"path": [
+										"task",
+										"delete",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-HBWelW0NytKCxB1l0To3VTDvkoA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 14:28:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Task deleted successfully\"\n}"
+						}
+					]
 				}
 			]
 		}
