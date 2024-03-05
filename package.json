@@ -1,0 +1,26 @@
+{
+  "name": "sassy",
+  "version": "1.0.0",
+  "description": "Sassy Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Deepak Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.10.2",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.9.0",
+    "jsonwebtoken": "^9.0.1",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.10.2"
+  }
+}
